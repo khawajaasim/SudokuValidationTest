@@ -1,9 +1,10 @@
 # Sudoku Validation Test
 
 #Validity Code
+
 Below is the code tha validates if given n dimentional array is valid Sudoku puzzle or not.
 
-private static bool ValidateSudoku(int[][] sudoku)
+    private static bool ValidateSudoku(int[][] sudoku)
         {
             #region NxN check
             for (int i = 0; i < sudoku.Length - 1; i++)
