@@ -50,13 +50,13 @@ namespace SudokuValidityTest
                 new int[] {1,2,3,4},
                 new int[] {1}
             };
-            bool goodSudoku = ValidateArray(goodSudoku1);
-            bool anotherGoodSudoku = ValidateArray(goodSudoku2);
-            bool badSudoku = ValidateArray(badSudoku1);
-            bool anotherBadSudoku = ValidateArray(badSudoku2);
+            bool goodSudoku = ValidateSudoku(goodSudoku1);
+            bool anotherGoodSudoku = ValidateSudoku(goodSudoku2);
+            bool badSudoku = ValidateSudoku(badSudoku1);
+            bool anotherBadSudoku = ValidateSudoku(badSudoku2);
         }
 
-        private static bool ValidateArray(int[][] sudoku)
+        private static bool ValidateSudoku(int[][] sudoku)
         {
             #region NxN check
             for (int i = 0; i < sudoku.Length - 1; i++)
